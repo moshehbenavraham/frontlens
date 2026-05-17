@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>MOJJU AI Video Production | Cinematic AI Film Studio</title>
+    <meta name="description" content="MOJJU is an award-winning AI video production studio crafting cinematic films, branded content, and visual effects with cutting-edge generative AI." />
+    <meta name="keywords" content="AI video production, AI film studio, generative video, AI filmmaking, AI commercials, MOJJU, cinematic AI" />
+    <meta name="author" content="MOJJU" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://mojju.ai/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MOJJU" />
+    <meta property="og:url" content="https://mojju.ai/" />
+    <meta property="og:title" content="MOJJU AI Video Production | Cinematic AI Film Studio" />
+    <meta property="og:description" content="Award-winning AI video production studio crafting cinematic films, branded content, and visual effects with cutting-edge generative AI." />
+    <meta property="og:image" content="https://mojju.ai/social-preview.svg" />
+    <meta property="og:image:alt" content="MOJJU AI Video Production cinematic social preview" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Mojjuai" />
+    <meta name="twitter:creator" content="@Mojjuai" />
+    <meta name="twitter:title" content="MOJJU AI Video Production | Cinematic AI Film Studio" />
+    <meta name="twitter:description" content="Award-winning AI video production studio crafting cinematic films, branded content, and visual effects with cutting-edge generative AI." />
+    <meta name="twitter:image" content="https://mojju.ai/social-preview.svg" />
+    <meta name="twitter:image:alt" content="MOJJU AI Video Production cinematic social preview" />
+
+    <!-- Preconnect to media CDN used in Hero -->
+    <link rel="preconnect" href="https://mojli.s3.us-east-2.amazonaws.com" crossorigin />
+    <link rel="dns-prefetch" href="https://mojli.s3.us-east-2.amazonaws.com" />
+
+    <!-- Preconnect to privacy-enhanced YouTube embed used in Portfolio -->
+    <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
+
+    <!-- Preconnect to Unsplash CDN — Services renders six photographic cards -->
+    <!-- pulled from images.unsplash.com, so the TLS handshake is worth the -->
+    <!-- ~80ms saved on first scroll into that section. -->
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+    <!--
+      Anti-FOUC theme bootstrap. Must run before paint to avoid a light-flash
+      for dark-OS users and a dark-flash for light-OS users. Mirrors the logic
+      in src/hooks/useTheme.ts (same storage key, same prefers-color-scheme
+      fallback). Keep these two in sync.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('mojju-theme');
+          var mode =
+            stored === 'light' || stored === 'dark' || stored === 'system'
+              ? stored
+              : 'system';
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var resolved =
+            mode === 'system' ? (prefersDark ? 'dark' : 'light') : mode;
+          if (resolved === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+          document.documentElement.style.colorScheme = resolved;
+        } catch (_) {
+          /* localStorage / matchMedia unavailable — fall through to default light */
+        }
+      })();
+    </script>
+
+    <!-- JSON-LD: Organization + VideoProduction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mojju.ai/#organization",
+          "name": "MOJJU",
+          "url": "https://mojju.ai/",
+          "logo": "https://mojju.ai/social-preview.svg",
+          "description": "Award-winning AI video production studio crafting cinematic films, branded content, and visual effects with cutting-edge generative AI.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2847 Highland Ave. Suite 310",
+            "addressLocality": "Birmingham",
+            "addressRegion": "AL",
+            "postalCode": "35205",
+            "addressCountry": "US"
+          },
+          "sameAs": [
+            "https://x.com/Mojjuai",
+            "https://www.tiktok.com/@mojju.ai",
+            "https://www.instagram.com/mojju.ai",
+            "https://linkedin.com/company/mojju"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mojju.ai/#website",
+          "url": "https://mojju.ai/",
+          "name": "MOJJU AI Video Production",
+          "publisher": { "@id": "https://mojju.ai/#organization" },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://mojju.ai/#service",
+          "name": "MOJJU AI Video Production",
+          "image": "https://mojju.ai/social-preview.svg",
+          "url": "https://mojju.ai/",
+          "areaServed": "Worldwide",
+          "serviceType": "AI Video Production",
+          "provider": { "@id": "https://mojju.ai/#organization" }
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

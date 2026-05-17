@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">MOJJU AI Video Production</title>
+  <desc id="desc">Social preview artwork for an AI video production landing page.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.48" stop-color="#161018"/>
+      <stop offset="1" stop-color="#210b0b"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9fafb"/>
+      <stop offset="0.55" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="58" y="58" width="1084" height="514" rx="28" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2"/>
+  <g opacity="0.18">
+    <circle cx="1020" cy="118" r="176" fill="#ef4444"/>
+    <circle cx="154" cy="514" r="210" fill="#2563eb"/>
+    <circle cx="824" cy="544" r="148" fill="#059669"/>
+  </g>
+  <g transform="translate(116 126)">
+    <rect x="0" y="0" width="360" height="246" rx="22" fill="#0f0f10" stroke="url(#frame)" stroke-width="8"/>
+    <rect x="28" y="28" width="304" height="190" rx="12" fill="#1f2937"/>
+    <path d="M158 82L238 123L158 164Z" fill="#f9fafb"/>
+    <g fill="#f9fafb" opacity="0.9">
+      <rect x="-32" y="28" width="18" height="28" rx="3"/>
+      <rect x="-32" y="82" width="18" height="28" rx="3"/>
+      <rect x="-32" y="136" width="18" height="28" rx="3"/>
+      <rect x="-32" y="190" width="18" height="28" rx="3"/>
+      <rect x="374" y="28" width="18" height="28" rx="3"/>
+      <rect x="374" y="82" width="18" height="28" rx="3"/>
+      <rect x="374" y="136" width="18" height="28" rx="3"/>
+      <rect x="374" y="190" width="18" height="28" rx="3"/>
+    </g>
+  </g>
+  <g transform="translate(548 156)">
+    <text x="0" y="0" fill="#ffffff" font-family="Impact, Arial Black, system-ui, sans-serif" font-size="92" letter-spacing="3">MOJJU</text>
+    <text x="0" y="76" fill="#e5e7eb" font-family="Inter, Arial, system-ui, sans-serif" font-size="34" font-weight="700">AI Video Production</text>
+    <text x="0" y="132" fill="#d1d5db" font-family="Inter, Arial, system-ui, sans-serif" font-size="24">Cinematic campaigns, brand films, animation,</text>
+    <text x="0" y="168" fill="#d1d5db" font-family="Inter, Arial, system-ui, sans-serif" font-size="24">and social content for modern teams.</text>
+  </g>
+  <g transform="translate(548 414)" fill="none" stroke="#ffffff" stroke-opacity="0.58" stroke-width="2">
+    <rect x="0" y="0" width="156" height="46" rx="23"/>
+    <rect x="178" y="0" width="132" height="46" rx="23"/>
+    <rect x="332" y="0" width="176" height="46" rx="23"/>
+  </g>
+  <g transform="translate(578 444)" fill="#ffffff" font-family="Inter, Arial, system-ui, sans-serif" font-size="18" font-weight="700">
+    <text x="0" y="0">Portfolio</text>
+    <text x="178" y="0">Awards</text>
+    <text x="332" y="0">Lead Capture</text>
+  </g>
+</svg>
